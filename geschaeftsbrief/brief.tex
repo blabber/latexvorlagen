@@ -1,0 +1,60 @@
+\documentclass[a4paper,parskip=full]{scrlttr2}
+\usepackage[pdftex,colorlinks,linkcolor=black]{hyperref}%
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{SIunits,microtype}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{ziffer}
+\usepackage{marvosym}
+
+\setkomavar{signature}{Frank Nord\\Experte}
+\setkomavar{subject}{Betreff}
+\setkomavar{date}{\today}
+
+\setkomavar{fromname}{RaumZeitLabor e.V.}
+\setkomavar{fromaddress}{Boveristr. 22 -- 24\\ 68309 Mannheim}
+\setkomavar{fromlogo}{\includegraphics[width=7cm]{logo.png}}
+\setkomavar{fromurl}[\Mundus]{www.raumzeitlabor.de}
+\setkomavar{fromemail}[\Email]{vorstand@raumzeitlabor.de}
+\setkomavar{fromphone}[\Telefon]{(06\,21)\,76\,23\,13\,70}
+\setkomavar{location}{%
+	\raggedleft
+	\begin{tabular}{@{}l@{~}l@{}}
+	\Mundus  & \usekomavar{fromurl}\\
+	\Email   & \usekomavar{fromemail}\\
+	\Telefon & \usekomavar{fromphone}\\
+	\end{tabular}
+}%
+
+\KOMAoptions{fromlogo=true,foldmarks=false}
+
+\DeclareUnicodeCharacter{20AC}{\euro}
+
+\begin{document}
+
+\begin{letter}{%
+    Bernd Lauert\\
+    Fnordstr. 23\\
+    68161 Mannheim}
+
+\opening{Sehr geehrter Herr Lauert,}
+
+Minions ipsum bee do bee do bee do baboiii pepete butt potatoooo poulet tikka
+masala. Tatata bala tu tatata bala tu chasy aaaaaah. Gelatooo jeje poulet tikka
+masala aaaaaah me want bananaaa! Chasy bee do bee do bee do pepete baboiii jiji
+butt. Jiji po kass bappleees chasy aaaaaah bananaaaa underweaaar tank yuuu! Tank
+yuuu! Para tú butt. Hana dul sae poulet tikka masala baboiii tatata bala tu hana
+dul sae jiji tatata bala tu. Aaaaaah ti aamoo! La bodaaa belloo! Pepete chasy
+pepete.
+
+\closing{Mit freundlichen Grüßen}
+
+%\encl{%
+%Anlagen
+%}
+
+\end{letter}
+
+\end{document}
