@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+
+\usepackage[absolute,showboxes]{textpos}
+\usepackage{marvosym}
+\usepackage{forloop}
+\usepackage{graphicx}
+
+%% Pass mich an!
+\newcommand{\datum}{01. Januar 1970}
+
+\pagestyle{empty}
+
+\TPGrid{3}{6}
+
+\begin{document}
+\footnotesize
+
+\newcounter{x}
+\newcounter{y}
+\forloop{x}{0}{\value{x} < 3}{
+\forloop{y}{0}{\value{y} < 6}{
+	\begin{textblock}{1}(\value{x},\value{y})
+	\begin{minipage}[t][\TPVertModule][t]{\TPHorizModule}
+
+	\bigskip
+	Mitgliederversammlung RaumZeitLabor e.V.\\
+	\datum
+
+	\bigskip
+	Name:
+	
+	\medskip
+	Wahlgang:
+	
+	\bigskip
+	Wahl zum
+	
+	\HollowBox~Vorsitzender\\
+	\HollowBox~Stellvertreter\\
+	\HollowBox~Kassenwart
+
+	\hfill\includegraphics[width=2cm]{logo.png}\hspace{10mm}
+	
+	\end{minipage}
+	
+	\end{textblock}
+}}
+\end{document}
