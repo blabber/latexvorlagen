@@ -1,0 +1,38 @@
+\documentclass[landscape]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ngerman}
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage[absolute, overlay]{textpos}
+\usepackage{tikz}
+\usepackage{eurosym}
+
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
+\newcommand{\drink}[5]{
+  \begin{textblock}{7}(#1,#2)
+    \begin{tikzpicture}
+      \draw (0, 0) node[inner sep=0] {\includegraphics[height=8.5cm, width=7cm]{../bilder/#3}};
+      \draw (0, 3.75) node {\Huge \textbf{#4}};
+      \draw (0, -3.75) node {\Huge \textbf{#5}};
+    \end{tikzpicture}
+  \end{textblock}
+} % \drink{x}{y}{path}{description}{price}
+
+\begin{document}
+
+\drink{0.25}{1.5}{club_mate.jpg}{Club Mate}{XXX 1,50\euro}
+\drink{7.40}{1.5}{flora_power_mate.jpg}{Flora Power}{XXX 1,50\euro}
+\drink{14.55}{1.5}{premium_cola.jpg}{Premium Cola}{XXX 1,50\euro}
+\drink{21.70}{1.5}{braumeister_limonade_zitrone.jpg}{Limonade}{XX 1,00\euro}
+
+\drink{0.25}{11}{flirt_orange.jpg}{Billig Fanta}{XX 1,00\euro}
+\drink{7.40}{11}{topstar_cola_mix_zero.jpg}{Billig Cola}{XX 1,00\euro}
+\drink{14.55}{11}{capi-sonne_cola_mix.jpg}{Capri Sonne}{X 0,50\euro}
+\drink{21.70}{11}{bitburger_premium_plis.jpg}{Bitburger}{XXX 1,50\euro}
+
+
+\end{document}
