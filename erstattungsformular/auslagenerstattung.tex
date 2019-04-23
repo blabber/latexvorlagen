@@ -8,7 +8,7 @@
 \renewcommand*{\familydefault}{phv}
 \usepackage[left=25mm,top=25mm,bottom=10mm,right=10mm]{geometry}
 \usepackage{fancyhdr}
-\lhead{RaumZeitLabor e.V.}\chead{}\rhead{Formular C22 - Formblatt Auslagenerstattung\tiny{V2016.08.16.2}}
+\lhead{RaumZeitLabor e.V.}\chead{}\rhead{Formular C22 - Formblatt Auslagenerstattung\tiny{V2018.04.23}}
 \lfoot{}\cfoot{}\rfoot{}
 \pagestyle{fancy}
 \usepackage{graphicx}
@@ -27,13 +27,27 @@ bordercolor={1 1 1},readonly=true]{}%
 \renewcommand{\baselinestretch}{1}
 \begin{document}
 \begin{floatingfigure}{0.45\textwidth}
-    %\vspace{1cm}
+    \vspace{3.5cm}
     \includegraphics[width=7cm]{RaumZeitLabor_Logo_Schwarz.pdf} %https://wiki.raumzeitlabor.de/wiki/Datei:RaumZeitLabor_-_Logo_-_Schwarz.svg
 \end{floatingfigure}
-\begin{Form}
 \section*{Erstattung von Auslagen}
+\begin{Form}
+\hfill
+\begin{tabular}{|rl|}
+\hline
+&\\*[-0.9em]\multicolumn{2}{|c|}{\textbf{Für den Kassenwart:}}\\
+&\\*[-0.9em]Nummer:&%
+\TextField[name=bnummer,width=15em,%
+bordercolor={0.65 0.79 0.94},readonly=true]{}\\
+&\\*[-0.9em]Datum:&%
+\TextField[name=bdatum,width=15em,%
+bordercolor={0.65 0.79 0.94},readonly=true]{}\\
+&\\
+\hline
+\end{tabular}
 
-\vspace{3cm}
+\vspace{4cm}
+
 \hfill
 \begin{tabular}{|ll|}
 \hline
@@ -108,21 +122,8 @@ Bei Barauszahlung: Ich bestätige hiermit den o.g. Betrag erhalten zu haben.
 
 \vspace{1cm}
 
-\hfill
-\begin{tabular}{|rl|}
-\hline
-&\\*[-0.9em]\multicolumn{2}{|c|}{\textbf{Für den Kassenwart:}}\\
-&\\*[-0.9em]Nummer:&%
-\TextField[name=bnummer,width=15em,%
-bordercolor={0.65 0.79 0.94},readonly=true]{}\\
-&\\*[-0.9em]Datum:&%
-\TextField[name=bdatum,width=15em,%
-bordercolor={0.65 0.79 0.94},readonly=true]{}\\
-&\\
-\hline
-\end{tabular}
 
-\vspace{-24cm}
+\vspace{-25cm}
 \begin{tabular}{|p{8cm}|}
 \hline
 Beleg hier einkleben oder an das Blatt heften\\
